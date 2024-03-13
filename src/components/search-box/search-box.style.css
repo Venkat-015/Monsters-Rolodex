@@ -1,0 +1,13 @@
+.search-box {
+    -webkit-appearance: none;
+    outline:auto rgb(225, 130, 7);
+    padding: 10px;
+    width: 200px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    background-color:rgb(7, 250, 193);
+    border: solid black 5px;
+    text-align: center;
+    font-size:large;
+
+  }
