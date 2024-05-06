@@ -1,10 +1,14 @@
 import Card from '../card/card.components';
+import { Monster } from '../../App';
 import './card-list.style.css';
-const CardList =({monsters})=>(
+type CardListProps={
+    monsters:Monster[];
+}
+const CardList =({monsters}:CardListProps)=>(
     <div className="card-list">{
     monsters.map((monster)=>{
         return(
-             <Card monster={monster}/>);})}
+             <Card key={monster.id} monster={monster}/>);})}
 
     </div>);
 export default CardList;
